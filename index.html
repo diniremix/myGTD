@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>myGTD</title>
+	<title>myGtd</title>
 	<!-- information-->	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="content-style-type" content="text/css"> 
-	<meta name="keywords" content="jquery mobile,jquery,mobile">
+	<meta name="keywords" content="jquery,mobile,jquery mobile,GTD">
 	<meta name="description" content="jquery mobile"> 
 	<meta name="author" content="jorge brunal a.k.a. diniremix">
-	<meta name="date" content="04,17,2012"> 
+	<meta name="date" content="07,29,2012"> 
 	<meta name="copyright" content="2012 c.c. http://creativecommons.org/licenses/by-sa/3.0/">
 	<meta http-equiv="expires" content= "thu, 31 dec 2012 00:05:00 est">
 	<meta name="generator" content="sublime text 2">	
 	<!-- jquery mobile cdn-->	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
 	<!-- jquery mobile local-->	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 		
 	<link rel="stylesheet" href="libs/JQueryMobile/1.1.0/jquery.mobile-1.1.0.min.css" />
@@ -24,21 +24,25 @@
 </head> 
 	<body>
 		<!--[if lt IE 9]>
-			<META HTTP-EQUIV="refresh" CONTENT="0; url=http://www.mozilla.org/es-ES/firefox/"> 
+			
 		<![endif]-->		
 		<!-- page -->
-		<div data-role="page" id="page" data-title="">
+		<div data-role="page" id="maipage" data-title="myGtd">
 			<div data-role="header">
-				<h1>My title</h1>
+				<h1>myGtd</h1>
+				<a href="#" data-rel="dialog" data-transition="pop" data-icon="grid" data-iconpos="notext" class="ui-btn-right"></a>				
 			</div><!-- /header -->
 			<div data-role="content" id="content">	
-				<p>Hello world with jquery mobile</p>		
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#">Acciones proximas</a></li>
+					<li><a href="#">Proyectos</a></li>
+					<li><a href="#">En espera</a></li>
+					<li><a href="#">Algun dia</a></li>
+				</ul>
 			</div><!-- /content -->
 			<div data-role="footer" data-id="footer" class="ui-bar" data-position="inline">
-				<h4>My footer</h4>
+				<h4>myGtd</h4>
 			</div>
 		</div><!-- /page -->
 	</body>
 </html>
-
-	
