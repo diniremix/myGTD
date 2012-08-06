@@ -33,23 +33,36 @@
 				<a href="#configtd" data-transition="slide" data-icon="grid" data-iconpos="notext" class="ui-btn-right"></a>				
 			</div><!-- /header -->
 			<div data-role="content" id="content">	
-				<ul data-role="listview" data-inset="true">
+				<ul data-role="listview" data-inset="true">			
 					<li><a href="#nextpage">Acciones proximas<span class="ui-li-count">4</span></a></li>
 					<li><a href="#">Proyectos<span class="ui-li-count">6</span></a></li>
 					<li><a href="#">En espera<span class="ui-li-count">12</span></a></li>
-					<li><a href="#">Algun dia<span class="ui-li-count">4</span></a></li>
+					<li><a href="#">Algun dia(Quiz&aacute;s)<span class="ui-li-count">4</span></a></li>
 				</ul>
 			</div><!-- /content -->
 			<div data-role="footer" data-id="mainfooter" data-iconpos="top" data-position="inline">
 				<div data-role="navbar">
 					<ul>				
-						<li><a href="#" id="mainabout" name="mainabout" data-icon="star">Acerca de</a></li>
-						<li><a href="#" id="mainvisit" name="mainvisit" data-icon="refresh">Visitanos</a></li>
-						<li><a href="#" id="mainnone" name="mainnone" data-icon="grid">none</a></li>
+						<li><a href="#dlgnuevo" id="ncarp" name="ncarp" data-rel="dialog" data-icon="star">Nueva carpeta</a></li>
+						<li><a href="#" id="visit" name="visit" data-icon="refresh">Visitanos</a></li>
+						<li><a href="#" id="mainabout" name="mainabout" data-icon="grid">Acerca de</a></li>
 					</ul>
 				</div><!-- /navbar -->
 			</div>
 		</div><!-- /page -->
+		<!-- page -->
+		<div data-role="page" id="dlgnuevo" data-title="Nueva carpeta">		
+			<div data-role="header" data-position="inline">				
+				<h1><strong>Nueva carpeta</strong></h1>				
+			</div>
+			<div data-role="content">			
+				<div data-role="fieldcontain" align="center">
+					<label for="carp"><strong>Nombre:</strong></label>
+					<input type="text" id="carp" name="carp" value="">
+					<a href="#mainpage" id="btn-aceptar" data-theme="e" data-role="button" data-inline="true" data-icon="check">Aceptar</a>
+				</div>
+			</div>
+		</div>
 		<!-- page -->
 		<div data-role="page" id="nextpage" data-title="Proximos">
 			<div data-role="header">
@@ -83,7 +96,7 @@
 			</div>
 		</div><!-- /page -->
 		<!-- page -->
-		<div data-role="page" id="detact" data-title="myGtd">
+		<div data-role="page" id="detact" data-title="Detalles">
 			<div data-role="header">
 				<h1>Titulo evento </h1>
 				<a href="#nextpage" data-transition="slide" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>				
@@ -114,7 +127,7 @@
 			</div>
 		</div><!-- /page -->
 		<!-- page -->
-		<div data-role="page" id="configtd" data-title="myGtd">
+		<div data-role="page" id="configtd" data-title="Configuraci&oacute;n">
 			<div data-role="header">
 				<h1>Configurar myGTD</h1>
 				<a href="#mainpage" data-transition="slide" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>				
