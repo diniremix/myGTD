@@ -34,14 +34,20 @@
 			</div><!-- /header -->
 			<div data-role="content" id="content">	
 				<ul data-role="listview" data-inset="true">
-					<li><a href="#nextpage">Acciones proximas <span class="ui-li-count">5</span></a></li>
-					<li><a href="#">Proyectos <span class="ui-li-count">6</span></a></li>
-					<li><a href="#">En espera <span class="ui-li-count">12</span></a></li>
-					<li><a href="#">Algun dia <span class="ui-li-count">4</span></a></li>
+					<li><a href="#nextpage">Acciones proximas<span class="ui-li-count">4</span></a></li>
+					<li><a href="#">Proyectos<span class="ui-li-count">6</span></a></li>
+					<li><a href="#">En espera<span class="ui-li-count">12</span></a></li>
+					<li><a href="#">Algun dia<span class="ui-li-count">4</span></a></li>
 				</ul>
 			</div><!-- /content -->
-			<div data-role="footer" data-id="footer" class="ui-bar" data-position="inline">	
-				<h1>myGtd</h1>
+			<div data-role="footer" data-id="mainfooter" data-iconpos="top" data-position="inline">
+				<div data-role="navbar">
+					<ul>				
+						<li><a href="#" id="mainabout" name="mainabout" data-icon="star">Acerca de</a></li>
+						<li><a href="#" id="mainvisit" name="mainvisit" data-icon="refresh">Visitanos</a></li>
+						<li><a href="#" id="mainnone" name="mainnone" data-icon="grid">none</a></li>
+					</ul>
+				</div><!-- /navbar -->
 			</div>
 		</div><!-- /page -->
 		<!-- page -->
@@ -52,20 +58,16 @@
 			</div><!-- /header -->
 			<div data-role="content" id="content">	
 				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar actividades" data-split-icon="delete" data-split-theme="d">
-					<li>
-						<a href="#infoact">Terminar myGTD</a>
+					<li><a href="#detact">Terminar myGTD</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
-					<li>
-						<a href="#">PukeCLI</a>
+					<li><a href="#">PukeCLI</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
-					<li>
-						<a href="#">Ondinote</a>
+					<li><a href="#">Ondinote</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
-					<li>
-						<a href="#">varios</a>
+					<li><a href="#">varios</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
 				</ul>
@@ -81,7 +83,7 @@
 			</div>
 		</div><!-- /page -->
 		<!-- page -->
-		<div data-role="page" id="infoact" data-title="myGtd">
+		<div data-role="page" id="detact" data-title="myGtd">
 			<div data-role="header">
 				<h1>Titulo evento </h1>
 				<a href="#nextpage" data-transition="slide" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>				
@@ -127,7 +129,7 @@
 				</div>
 				<div data-role="fieldcontain">
 					<label for="checklogin"><strong></strong>Iniciar sesi&oacute;n automaticamente</label>
-					<input type="checkbox" id="checklogin" name="checklogin" value="login"check=check>
+					<input type="checkbox" id="checklogin" name="checklogin" value="alogin">
 				</div>
 				<div data-role="fieldcontain">
 					<label for="selectlang"><strong>Idioma:</strong></label>
@@ -137,9 +139,8 @@
 						<option value="fr">Franc&eacute;s</option>
 					</select>
 				</div>
-
 			</div><!-- /content -->
-			<div data-role="footer" data-id="detfooter" data-iconpos="top" data-position="inline">
+			<div data-role="footer" data-id="configfooter" data-iconpos="top" data-position="inline">
 				<h1>MYGTD</h1>
 			</div>
 		</div><!-- /page -->
