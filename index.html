@@ -53,19 +53,19 @@
 			<div data-role="content" id="content">	
 				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar actividades" data-split-icon="delete" data-split-theme="d">
 					<li>
-						<a href="#">Acciones proximas</a>
+						<a href="#infoact">Terminar myGTD</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
 					<li>
-						<a href="#">Proyectos</a>
+						<a href="#">PukeCLI</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
 					<li>
-						<a href="#">En espera</a>
+						<a href="#">Ondinote</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
 					<li>
-						<a href="#">Algun dia</a>
+						<a href="#">varios</a>
 						<a href="#deleteitem" data-transition="slideup"></a>
 					</li>
 				</ul>
@@ -81,21 +81,37 @@
 			</div>
 		</div><!-- /page -->
 		<!-- page -->
-		<div data-role="page" id="maipage" data-title="myGtd">
+		<div data-role="page" id="infoact" data-title="myGtd">
 			<div data-role="header">
-				<h1>myGtd</h1>
-				<a href="#" data-rel="dialog" data-transition="pop" data-icon="grid" data-iconpos="notext" class="ui-btn-right"></a>				
+				<h1>Titulo evento </h1>
+				<a href="#nextpage" data-transition="slide" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>				
 			</div><!-- /header -->
 			<div data-role="content" id="content">	
-				<ul data-role="listview" data-inset="true">
-					<li><a href="#">Acciones proximas</a></li>
-					<li><a href="#">Proyectos</a></li>
-					<li><a href="#">En espera</a></li>
-					<li><a href="#">Algun dia</a></li>
-				</ul>
+				<!-- <div data-role="fieldcontain" align="center">
+						<h2>Titulo</h2>					
+				</div> -->
+				<div data-role="fieldcontain">
+     				<label for="infodetalles"><strong>Detalles:</strong></label>
+     				<textarea id="infodetalles" name="infodetalles"></textarea>
+				</div>
+     			<div data-role="fieldcontain">
+     				<label for="selectopt"><strong>Mover a:</strong></label>
+ 					<select name="selectopt" data-native-menu="false">
+	 					<option value="proximos" selected>Proximos</option>
+	 					<option value="proyectos">Proyectos</option>
+	 					<option value="espera">Espera</option>
+	 					<option value="algundia">Algun dia</option>
+ 					</select>
+				</div>
 			</div><!-- /content -->
-			<div data-role="footer" data-id="footer" class="ui-bar" data-position="inline">
-				<h4>myGtd</h4>
+			<div data-role="footer" data-id="nextfooter" data-iconpos="top" data-position="inline">
+				<div data-role="navbar">
+					<ul>				
+						<li><a href="#" id="detadd" name="detadd" data-icon="plus">Modificar</a></li>
+						<li><a href="#" id="detdel" name="detdel" data-icon="delete">Cancelar</a></li>
+						<li><a href="#" id="detnone" name="detnone" data-icon="grid">none</a></li>
+					</ul>
+				</div><!-- /navbar -->
 			</div>
 		</div><!-- /page -->
 	</body>
