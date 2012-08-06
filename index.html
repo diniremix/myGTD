@@ -27,6 +27,60 @@
 			
 		<![endif]-->		
 		<!-- page -->
+		<div data-role="page" id="mainpage" data-title="myGtd">
+			<div data-role="header">
+				<h1>myGtd</h1>
+				<a href="#nextpage" data-transition="slide" data-icon="grid" data-iconpos="notext" class="ui-btn-right"></a>				
+			</div><!-- /header -->
+			<div data-role="content" id="content">	
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#">Acciones proximas <span class="ui-li-count">5</span></a></li>
+					<li><a href="#">Proyectos <span class="ui-li-count">6</span></a></li>
+					<li><a href="#">En espera <span class="ui-li-count">12</span></a></li>
+					<li><a href="#">Algun dia <span class="ui-li-count">4</span></a></li>
+				</ul>
+			</div><!-- /content -->
+			<div data-role="footer" data-id="footer" class="ui-bar" data-position="inline">	
+				<h1>myGtd</h1>
+			</div>
+		</div><!-- /page -->
+		<!-- page -->
+		<div data-role="page" id="nextpage" data-title="Proximos">
+			<div data-role="header">
+				<h1>Proximos</h1>
+				<a href="#mainpage" data-transition="slide" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>				
+			</div><!-- /header -->
+			<div data-role="content" id="content">	
+				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar actividades" data-split-icon="delete" data-split-theme="d">
+					<li>
+						<a href="#">Acciones proximas</a>
+						<a href="#deleteitem" data-transition="slideup"></a>
+					</li>
+					<li>
+						<a href="#">Proyectos</a>
+						<a href="#deleteitem" data-transition="slideup"></a>
+					</li>
+					<li>
+						<a href="#">En espera</a>
+						<a href="#deleteitem" data-transition="slideup"></a>
+					</li>
+					<li>
+						<a href="#">Algun dia</a>
+						<a href="#deleteitem" data-transition="slideup"></a>
+					</li>
+				</ul>
+			</div><!-- /content -->
+			<div data-role="footer" data-id="nextfooter" data-iconpos="top" data-position="inline">
+				<div data-role="navbar">
+					<ul>				
+						<li><a href="#" id="nextadd" name="nextadd" data-icon="plus">Nuevo</a></li>
+						<li><a href="#" id="nextdel" name="nextdel" data-icon="delete">Eliminar</a></li>
+						<li><a href="#" id="nextnone" name="nextnone" data-icon="grid">none</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div>
+		</div><!-- /page -->
+		<!-- page -->
 		<div data-role="page" id="maipage" data-title="myGtd">
 			<div data-role="header">
 				<h1>myGtd</h1>
